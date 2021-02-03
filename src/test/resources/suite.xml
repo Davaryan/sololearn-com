@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+  
+<suite name="Sololearn" verbose="1" >
+  <test name="LoginArea" >
+    <classes>
+       <class name="am.itu.sololearn.login.LoginTest" />
+    
+      
+    </classes>
+  </test>
+ </suite>
