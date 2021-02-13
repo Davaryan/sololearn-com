@@ -1,6 +1,6 @@
-package am.itu.sololarn.page.courses;
+package am.itu.sololearn.page.courses;
 
-import static am.itu.sololarn.page.courses.CoursesPageConstants.*;
+import static am.itu.sololearn.page.courses.CoursesPageConstants.*;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

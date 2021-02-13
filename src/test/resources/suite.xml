@@ -2,10 +2,11 @@
   
 <suite name="Sololearn" verbose="1" >
   <test name="LoginArea" >
+  
     <classes>
        <class name="am.itu.sololearn.login.LoginTest" />
     
-      
+          
     </classes>
-  </test>
- </suite>
+    </test>
+  </suite>

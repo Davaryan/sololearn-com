@@ -1,4 +1,4 @@
-package am.itu.sololarn.page.courses;
+package am.itu.sololearn.page.courses;
 
 public class CoursesPageConstants {
 public static final String COURSES_LINK_FOOTER_XPATH="//a[@href='/Courses/']";

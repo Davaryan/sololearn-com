@@ -1,13 +1,13 @@
-package am.itu.sololarn.page.home;
+package am.itu.sololearn.page.home;
 
-import static am.itu.sololarn.page.home.HomePageConstants.*;
+import static am.itu.sololearn.page.home.HomePageConstants.*;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import am.itu.sololearn.page.base.BasePage;
-import am.itu.sololearn.page.signInPage.SololearnLoginPage;
+import am.itu.sololearn.page.login.SololearnLoginPage;
 
 public class HomePageHeader extends BasePage{
 
@@ -26,7 +26,12 @@ public class HomePageHeader extends BasePage{
 
 	public boolean mainPageLogoIsDisplayed() {
 	return logoMainHeader.isDisplayed();
+	
 }
+	public HomePageHeader clickOnLogo() {
+		logoMainHeader.click();
+		return new HomePageHeader(driver);
+	}
 	@FindBy(xpath = COURSES_LINK_XPATH)
 	WebElement coursesMainHeader;
 
@@ -68,7 +73,7 @@ public class HomePageHeader extends BasePage{
 	return signInMainHeader.isDisplayed();
 	}
 	
-	public SololearnLoginPage navigateToSigninPage() {
+	public SololearnLoginPage goToSigninPage() {
 	signInMainHeader.click();
 	return new SololearnLoginPage(driver);
 	}

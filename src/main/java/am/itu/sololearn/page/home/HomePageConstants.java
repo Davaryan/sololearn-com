@@ -1,4 +1,4 @@
-package am.itu.sololarn.page.home;
+package am.itu.sololearn.page.home;
 
 public class HomePageConstants {
 
@@ -13,7 +13,8 @@ public class HomePageConstants {
 	public static final String HOME_FOOTER_XPATH = "//div[@class='home__footer__content-section']";
 	public static final String COURSES_LINK_XPATH = "//*[@id='homeNavList']/li[1]/a";
 	public static final String CODE_PLAYGROUND_XPATH = "//*[@id='homeNavList']/li[2]/a";
-	public static final String SIGNIN_ELEMENT_XPATH = "//a[@class='home__nav__link home__nav__link--rounded']";
+//	public static final String SIGNIN_ELEMENT_XPATH = "//a[text()='sign in']";
+	public static final String SIGNIN_ELEMENT_XPATH = "//a[@id='homeNavLoginButton']";
 	public static final String ERROR_ELEMENT_XPATH = "//span[@class='sl-login-field-error__error']";
 	// "//span[text()='Invalid email address']";
 	public static final String PASS_INPUT_ELEMENT_XPATH = "//input[@type='password']";

@@ -1,6 +1,8 @@
 package am.itu.sololearn.courses;
-import am.itu.sololarn.page.courses.CoursesPage;
+import am.itu.sololearn.base.Settings;
 import am.itu.sololearn.page.Java.JavaPage;
+import am.itu.sololearn.page.courses.CoursesPage;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

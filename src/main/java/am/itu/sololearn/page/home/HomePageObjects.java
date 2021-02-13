@@ -1,6 +1,6 @@
-package am.itu.sololarn.page.home;
+package am.itu.sololearn.page.home;
 
-import static am.itu.sololarn.page.home.HomePageConstants.*;
+import static am.itu.sololearn.page.home.HomePageConstants.*;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
