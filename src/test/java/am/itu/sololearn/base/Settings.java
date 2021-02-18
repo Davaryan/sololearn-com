@@ -16,11 +16,13 @@ public class Settings {
 		driver = new ChromeDriver();
 		driver.get("https://sololearn.com");
 		driver.manage().window().maximize();
+		System.out.println("Page Launched");
 		
 	}
 	
 	@AfterClass
 	public void leavePage() {
 		driver.quit();
+		System.out.println("End of Session");
 	}
 }

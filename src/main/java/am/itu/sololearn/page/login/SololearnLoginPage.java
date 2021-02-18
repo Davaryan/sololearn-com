@@ -15,17 +15,17 @@ public class SololearnLoginPage extends BasePage {
 
 	}
 
-//	@FindBy(xpath = SIGNIN_ELEMENT_XPATH)
-//	WebElement signInMainHeader;
-//
-//	public boolean mainPageSignInIsDisplayed() {
-//		return signInMainHeader.isDisplayed();
-//	}
-//
-//	public SololearnLoginPage goToSigninPage() {
-//		signInMainHeader.click();
-//		return new SololearnLoginPage(driver);
-//	}
+	@FindBy(xpath = SIGNIN_ELEMENT_XPATH)
+	WebElement signInMainHeader;
+
+	public boolean mainPageSignInIsDisplayed() {
+		return signInMainHeader.isDisplayed();
+	}
+
+	public SololearnLoginPage goToSigninPage() {
+		signInMainHeader.click();
+		return new SololearnLoginPage(driver);
+	}
 
 	@FindBy(xpath = EMAIL_INPUT_ELEMENT_XPATH)
 	WebElement inputEmail;
@@ -68,5 +68,11 @@ public class SololearnLoginPage extends BasePage {
 
 	public void clickOnLoginBtn() {
 		loginBtn.click();
+	}
+	@FindBy (xpath=LOGIN_ERROR_MESSAGE_XPATH)
+	WebElement loginErrorMessage;
+	
+	public boolean errorMessageIsDisplayed() {
+		return loginErrorMessage.isDisplayed();
 	}
 }

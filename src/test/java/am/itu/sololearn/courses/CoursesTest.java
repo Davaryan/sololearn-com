@@ -1,34 +1,37 @@
 package am.itu.sololearn.courses;
 import am.itu.sololearn.base.Settings;
-import am.itu.sololearn.page.Java.JavaPage;
 import am.itu.sololearn.page.courses.CoursesPage;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 
 public class CoursesTest extends Settings {
 	
+		
 	@Test (priority=1)
+	// Verify the Courses link/button is displayed on main page header menu 
 	public void isCoursesLinkPresent() throws InterruptedException {
-		CoursesPage coursesLink=new CoursesPage(driver);
-		Assert.assertTrue(coursesLink.isCourseLinkPresent());
+		CoursesPage link=new CoursesPage(driver);
+		Assert.assertTrue(link.isCourseLinkPresent());
 		Thread.sleep(5000);
 	}
 	
 	@Test (priority=2)
+	// Verify the Courses link/button on main page header menu  is clickable
+	// Navigate to Courses page
 	public void goToCoursesPage() throws InterruptedException {
-		CoursesPage coursesPage=new CoursesPage(driver);
-		coursesPage.navigateToCoursePage();
+		CoursesPage page=new CoursesPage(driver);
+		page.navigateToCoursePage();
 		Assert.assertTrue(true, "What would you like to learn?");
 		Thread.sleep(5000);
-		Assert.assertTrue(coursesPage.isHeadDisplayed());
+		Assert.assertTrue(page.isHeadDisplayed());
 		}
 	
-	@Test (priority=3)
-	public void goToJavaPage() throws InterruptedException {
-	JavaPage javaPage=new JavaPage(driver);
-	javaPage.navigateToJavaPage();
-	Thread.sleep(5000);
+	@AfterMethod
+	// Go back to courses page before the next test
+	public void backToCoursesPage(){
+	driver.get("https://www.sololearn.com/learning");
 	}
 		}
