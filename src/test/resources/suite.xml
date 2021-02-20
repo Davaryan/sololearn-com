@@ -5,7 +5,10 @@
   
     <classes>
        <class name="am.itu.sololearn.courses.JavaTest" />
-     
+       <class name="am.itu.sololearn.courses.CoursesTest" />
+       <class name="am.itu.sololearn.login.LoginTest" />
+       <class name="am.itu.sololearn.courses.JavaTest" />
+        <class name="am.itu.sololearn.mainlogo.LogoClickTest" />
           
     </classes>
     </test>
